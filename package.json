@@ -1,0 +1,25 @@
+{
+  "name": "13-14-vetbee-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariusCodeAcademy/type12-node-13-14-vetbee-fe.git"
+  },
+  "keywords": [],
+  "author": "Marius K. <Marius@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariusCodeAcademy/type12-node-13-14-vetbee-fe/issues"
+  },
+  "homepage": "https://github.com/MariusCodeAcademy/type12-node-13-14-vetbee-fe#readme",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}

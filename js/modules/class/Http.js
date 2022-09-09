@@ -1,13 +1,15 @@
+/* eslint-disable max-classes-per-file */
 export default class Http {
   static baseUrl = 'http://localhost:3000/api/v1';
 
-  static async get(url) {
+  static async getAll(url) {
     try {
       const resp = await fetch(`${Http.baseUrl}${url}`);
-      if (!resp.ok)
+      if (!resp.ok) {
         throw new Error(
           `fetch fail: ${resp.status} ${resp.statusText} trying to fetch ${resp.url}`
         );
+      }
       const dataInJs = await resp.json();
       console.log('http:', dataInJs);
       return dataInJs;
@@ -19,7 +21,7 @@ export default class Http {
 }
 
 export class PetsService extends Http {
-  static getAll() {
-    return PetsService.get('/pets');
+  static getPets() {
+    return PetsService.getAll('/pets');
   }
 }
