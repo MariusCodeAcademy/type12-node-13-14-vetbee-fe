@@ -1,5 +1,5 @@
 /* eslint-disable max-classes-per-file */
-export default class Http {
+class Http {
   static baseUrl = 'http://localhost:3000/api/v1';
 
   static async getAll(url) {
