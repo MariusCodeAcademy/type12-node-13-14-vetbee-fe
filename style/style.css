@@ -1,0 +1,30 @@
+@import 'reset.css';
+
+:root {
+  --main-color: coral;
+}
+
+.pets-list .card {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+
+.btn.outline {
+  background-color: #fff;
+  color: var(--main-color);
+}
